@@ -11,7 +11,7 @@ function User() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/api/v1/user/getusers", {
+      .get("https://paymentapp-backend-z8c0.onrender.com/api/v1/user/getusers", {
         headers: {
           Authorization: localStorage.getItem("token") || "",
         },

@@ -28,7 +28,7 @@ function Sendmoney() {
 
     try {
       await axios.post(
-        "http://localhost:3001/api/v1/accounts/transfer",
+        "https://paymentapp-backend-z8c0.onrender.com/api/v1/accounts/transfer",
         {
           amount,
           to: toUserId,

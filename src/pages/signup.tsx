@@ -35,7 +35,7 @@ export function Signup() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/v1/user/signup",
+        "https://paymentapp-backend-z8c0.onrender.com/api/v1/user/signup",
         { username, email, password }
       );
 

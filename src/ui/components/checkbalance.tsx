@@ -12,7 +12,7 @@ function Checkbalance() {
     setError("");
     try {
       const res = await axios.get(
-        "http://localhost:3001/api/v1/accounts/checkbalance",
+        "https://paymentapp-backend-z8c0.onrender.com/api/v1/accounts/checkbalance",
         {
           headers: {
             Authorization: localStorage.getItem("token") || "",
